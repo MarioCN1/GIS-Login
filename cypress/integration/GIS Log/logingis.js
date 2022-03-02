@@ -1,7 +1,7 @@
 /// Loging test script steps
 /// <reference types="cypress" />
 
-import {LoginPage} from "../common/login_page"
+import {LoginPage} from "C:/Users/Mario M/Documents/Cypress/GIS Login/cypress/integration/common/loginpage"
 
 describe('All login test', function(){
     const login_page = new LoginPage ()
