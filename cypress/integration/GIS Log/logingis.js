@@ -8,8 +8,8 @@ describe('All login test', function(){
 
 it('GIS Login Test valid credentials', function(){
     login_page.navigate('http://gis-staging.interstellar.prv:3000/account/login');
-    login_page.enterUsername('gis_administrator@pccwglobal.com');
-    login_page.enterPassword('pCcwglob@L2022');
+    login_page.enterUsername('mnavacerrada@pccwglobal.com');
+    login_page.enterPassword('MarioenGIS81!');
     login_page.clickLogin();
     cy.contains('Welcome to GIS Portal');
 })
