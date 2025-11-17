@@ -1,13 +1,13 @@
 /// Loging test script steps
 /// <reference types="cypress" />
 
-import {LoginPage} from "C:/Users/Mario M/Documents/Cypress/GIS Login/cypress/integration/common/loginpage"
+import {LoginPage} from "/home/mnavacerrada/Documents/GIS/GIS Automation/GIS Login/GIS-Login/cypress/e2e/common/loginpage.js"
 
 describe('All login test', function(){
     const login_page = new LoginPage ()
 
 it('GIS Login Test valid credentials', function(){
-    login_page.navigate('http://gis-staging.interstellar.prv:3000/account/login');
+    login_page.navigate('http://172.25.253.184:3000/account/login');
     login_page.enterUsername('mnavacerrada@pccwglobal.com');
     login_page.enterPassword('MarioenGIS81!');
     login_page.clickLogin();
@@ -15,7 +15,7 @@ it('GIS Login Test valid credentials', function(){
 })
 
 it('GIS Login Test invalid User', function(){
-    login_page.navigate('http://gis-staging.interstellar.prv:3000/account/login');
+    login_page.navigate('http://172.25.253.184:3000/account/login');
     login_page.enterUsername('gis_administrator@pccwg888lobal.com');
     login_page.enterPassword('pCcwglob@L2022');
     login_page.clickLogin();
@@ -26,7 +26,7 @@ it('GIS Login Test invalid User', function(){
 })
 
 it('GIS Login Test invalid Password', function(){
-    login_page.navigate('http://gis-staging.interstellar.prv:3000/account/login');
+    login_page.navigate('http://172.25.253.184:3000/account/login');
     login_page.enterUsername('gis_administrator@pccwglobal.com');
     login_page.enterPassword('pCcwglob@L2022FFG');
     login_page.clickLogin();
